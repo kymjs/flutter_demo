@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="io.flutter.examples.gallery">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="io.flutter.app.FlutterApplication"
+        android:label="Gallery"
+        android:icon="@mipmap/ic_launcher">
+        
+        <activity android:name=".MainActivity"
+                  android:launchMode="singleTop"
+                  android:theme="@android:style/Theme.Light.NoTitleBar"
+                  android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale"
+                  android:hardwareAccelerated="true"
+                  android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
